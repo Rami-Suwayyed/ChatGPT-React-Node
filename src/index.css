@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
 
-* {
+*{
     color: #fff;
     font-family: 'Open Sans', sans-serif;
 }
@@ -112,13 +112,13 @@ input:focus {
 }
 
 .feed {
-    overFlow: scroll;
+    overflow: scroll; /* Corrected property name */
     width: 100%;
     padding: 0;
 }
 
 .feed li {
-    display: flex;
+    /* display: flex; */
     background-color: #444654;
     width: 100%;
     padding: 20px;
