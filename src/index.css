@@ -112,7 +112,7 @@ input:focus {
 }
 
 .feed {
-    overflow: scroll; /* Corrected property name */
+    /* overflow: scroll; Corrected property name */
     width: 100%;
     padding: 0;
 }

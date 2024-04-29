@@ -46,26 +46,28 @@ const App = () => {
     
         if (currentTitle && value && message) {
             setPreviousChats(prevChats => (
-                [...prevChats,
-                    {
-                        title: currentTitle,
-                        role: "user",
-                        content: value
-                    },
-                    {
-                        title: currentTitle,
-                        role: message.role,
-                        content: message.content
-                    }
-                ]
-            ))
+            [...prevChats,
+                {
+                    title: currentTitle,
+                    role: "user",
+                    content: value
+                },
+                {
+                    title: currentTitle,
+                    role: message.role,
+                    content: message.content
+                }
+            ]
+        ))
         }
-    }, [message, currentTitle]);
-    
+    }, [message , currentTitle]
+)
+
     const currentChat = previousChats.filter(previousChat => previousChat.title === currentTitle);
-    
-    const uniqueTitles = Array.from(new Set(previousChats.map(previousChat => previousChat.title)));
-    
+
+    const uniqueTitles = Array.from(new Set(previousChats.map(previousChat => previousChat.title)
+)
+);
 
 return (
     <div className="app">
